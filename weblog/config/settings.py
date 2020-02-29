@@ -70,10 +70,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'config.wsgi.application'
 
-
-# Database
-# https://docs.djangoproject.com/en/2.2/ref/settings/#databases
-
+# DataBaseの設定
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -100,9 +97,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
-# Internationalization
-# https://docs.djangoproject.com/en/2.2/topics/i18n/
+#TimeZoneの設定
 
 LANGUAGE_CODE = 'ja'
 
@@ -114,9 +109,6 @@ USE_L10N = True
 
 USE_TZ = True
 
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/2.2/howto/static-files/
-
+# 静的ファイルの宣言
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, '/static/')
+STATICFILES_DIRS = [os.path.join(BASE_DIR, '/static/')]

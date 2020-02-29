@@ -1,0 +1,39 @@
+  * {
+      margin: 0;
+      padding: 0;
+  }
+
+  @media screen and (min-width:900px) {
+
+      /*　画面サイズ 1000px以上から適用　*/
+      body {}
+
+      #wrapper {
+          width: 900px;
+          margin: 0 auto;
+      }
+      .mainArea {
+          display: flex;
+      }
+      .blogArea{
+          width: 650px;
+      }
+      .sidebarArea{
+          width: 200px;
+      }
+  }
+
+  @media screen and (min-width: 500px) and (max-width: 900px) {
+
+      /*　画面サイズ 500pxから999pxまで適用　*/
+
+      #wrapper {
+          margin: 0 auto;
+      }
+  }
+
+  @media screen and (max-width: 499px) {
+
+      /*　画面サイズ 499pxまで適用　*/
+
+  }

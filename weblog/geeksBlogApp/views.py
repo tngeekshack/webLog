@@ -1,5 +1,9 @@
 from django.shortcuts import render
-
+from .models import Post
 
 def post_list(request):
-    return render(request, 'geeksBlogApp/post_list.html')
+    contents = {
+    'posts': Post.objects.all()
+} 
+    return render(request, 'geeksBlogApp/post_list.html' ,contents)
+
